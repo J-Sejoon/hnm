@@ -1,0 +1,51 @@
+.productCard {
+	margin: 10px 0;
+
+	.img-container {
+		cursor: pointer;
+		position: relative;
+		transition: 0.3s;
+
+		img {
+			width: 100%;
+		}
+
+		.item_box {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			font-size: 0.85rem;
+
+			.event {
+				background: #fff;
+				margin-bottom: 15px;
+				display: inline-block;
+				padding: 4px 15px 4px 8px;
+			}
+			.new {
+				background: var(--color-point);
+				position: absolute;
+				right: 0;
+				bottom: 50px;
+				color: #fff;
+				padding: 3px 10px 5px 5px;
+			}
+		}
+
+		&:hover {
+			transform: scale(1.05);
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+		}
+	}
+
+	.title {
+		margin-top: 5px;
+		font-size: 0.9rem;
+	}
+
+	.price {
+		color: var(--color-point);
+		font-size: 0.8rem;
+	}
+}
