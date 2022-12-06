@@ -12,7 +12,7 @@ const ProductDetail = () => {
 	let { id } = useParams();
 
 	const getProductDetail = async () => {
-		let url = `https://my-json-server.typicode.com/depeche00777/hnm/products/${id}`;
+		let url = `https://my-json-server.typicode.com/J-Sejoon/hnm/products/${id}`;
 		let response = await fetch(url); //브라우저는 네트워크에 요청을 보내고 프로미스객체가 반환
 		let data = await response.json();
 		setProduct(data);
