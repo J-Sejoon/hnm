@@ -1,5 +1,3 @@
-// useParans - 현재 경로에서 사용되는 모든 파라메터 들이 저장되어있음
-
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Dropdown, Button } from "react-bootstrap";
 import { useParams } from "react-router-dom";
@@ -13,14 +11,13 @@ const ProductDetail = () => {
 
 	const getProductDetail = async () => {
 		let url = `https://my-json-server.typicode.com/J-Sejoon/hnm/products/${id}`;
-		let response = await fetch(url); //브라우저는 네트워크에 요청을 보내고 프로미스객체가 반환
+		let response = await fetch(url);
 		let data = await response.json();
 		setProduct(data);
 	};
 
 	const likeToggle = () => {
 		setHeartFill(!heartFill);
-		console.log("heartFill상태는? ", heartFill);
 	};
 
 	useEffect(() => {
