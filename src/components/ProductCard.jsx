@@ -1,4 +1,3 @@
-//상품을 눌렀을때 그 상품에 해당하는 ProductDetail페이지로 넘어가게
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./ProductCard.scss";
