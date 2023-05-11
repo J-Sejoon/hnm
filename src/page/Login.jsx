@@ -1,4 +1,3 @@
-//리액트 부트스트랩을 이용해서 로그인 form
 import React from "react";
 import { Button, Form } from "react-bootstrap";
 import "./Login.scss";
@@ -7,10 +6,9 @@ import { useNavigate } from "react-router-dom";
 const Login = ({ setAuthenticate }) => {
 	const navigate = useNavigate();
 	const loginUser = (e) => {
-		e.preventDefault(); //새로고침 해주는걸 막아줌
-		//console.log("loginUser 함수 실행");
-		setAuthenticate(true); //로그인이 되게 바꿔줌
-		navigate("/"); //첫페이지로 간다
+		e.preventDefault(); 
+		setAuthenticate(true); 
+		navigate("/"); 
 	};
 
 	return (
