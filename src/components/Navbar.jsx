@@ -27,16 +27,14 @@ const Navbar = ({ authenticate, setAuthenticate }) => {
 
 	const search = (event) => {
 		if (event.key === "Enter") {
-			//엔터키만을 눌렀을때 반응
-			let keyword = event.target.value; //js와 다름 event안에 value가 들어있음
+			let keyword = event.target.value;
 			console.log("keyword는?", keyword);
-			navigate(`/?q=${keyword}`); //추가조건은 쿼리로 붙임, 키워드를 읽어와서 url에 넣어줌
+			navigate(`/?q=${keyword}`);
 		}
 	};
 
 	const gotoLogin = () => {
-		//authenticate가 false인 상태에서 실행
-		navigate("/login"); //login페이지로 이동
+		navigate("/login");
 	};
 
 	return (
@@ -98,6 +96,3 @@ const Navbar = ({ authenticate, setAuthenticate }) => {
 };
 
 export default Navbar;
-
-// $ npm install react-icons --save
-// $ yarn add sass
